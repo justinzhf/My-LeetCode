@@ -18,6 +18,7 @@ public class Solution242 {
         for(Object key:keys1){
             int num1=map1.getOrDefault(key,0);
             int num2=map2.getOrDefault(key,0);
+            //直接map1.getOrDefault(key,0)!=map2.getOrDefault(key,0)会出错？？？？
             if(num1!=num2){
                 System.out.println(key);
                 return false;
